@@ -69,12 +69,12 @@ echo $this->Html->script('KrajRegions/index', ['block' => 'scriptBottom']);
                         <div class="statusMsg"></div>
                         <form role="form">
                             <div class="form-group">
-                                <label for="name">Name (nazev)</label>
+                                <label for="nazev">Name (nazev)</label>
                                 <input type="text" class="form-control" name="nazev" id="nazev" placeholder="Enter the name (nazev)">
                             </div>
                             <div class="form-group">
-                                <label for="email">Code (kod)</label>
-                                <input type="email" class="form-control" name="kod" id="kod" placeholder="Enter the code (kod)">
+                                <label for="kod">Code (kod)</label>
+                                <input type="text" class="form-control" name="kod" id="kod" placeholder="Enter the code (kod)">
                             </div>
                             <input type="hidden" class="form-control" name="id" id="id"/>
                         </form>

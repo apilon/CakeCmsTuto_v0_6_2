@@ -10954,3 +10954,66 @@ UNION (SELECT ArticlesFiles.id AS `ArticlesFiles__id`, ArticlesFiles.article_id 
             WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
 2020-11-06 18:33:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
 2020-11-06 18:33:34 Debug: duration=0 rows=14 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-06 19:26:09 Debug: duration=34 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-06 19:26:09 Debug: duration=7 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-06 19:26:09 Debug: duration=33 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-06 19:26:09 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-06 19:26:09 Debug: duration=1 rows=14 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-06 19:26:53 Debug: duration=1 rows=1 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 8 LIMIT 1
+2020-11-06 19:28:12 Debug: duration=7 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-06 19:28:12 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-06 19:28:12 Debug: duration=35 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-06 19:28:12 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-06 19:28:12 Debug: duration=0 rows=0 BEGIN
+2020-11-06 19:28:12 Debug: duration=7 rows=1 INSERT INTO kraj_regions (kod, nazev) VALUES ('CA000', 'Lavalsky Kraj')
+2020-11-06 19:28:12 Debug: duration=0 rows=0 COMMIT
+2020-11-06 19:30:24 Debug: duration=6 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-06 19:30:24 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-06 19:30:24 Debug: duration=27 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-06 19:30:24 Debug: duration=5 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-06 19:30:24 Debug: duration=1 rows=1 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 19 LIMIT 1
+2020-11-06 19:30:24 Debug: duration=0 rows=0 BEGIN
+2020-11-06 19:30:24 Debug: duration=5 rows=1 UPDATE kraj_regions SET kod = 'CA001' , nazev = 'Lavalsky Kraj mod' WHERE id = 19
+2020-11-06 19:30:24 Debug: duration=0 rows=0 COMMIT
+2020-11-06 19:31:30 Debug: duration=1 rows=1 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 19 LIMIT 1
+2020-11-06 19:31:37 Debug: duration=1 rows=1 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 19 LIMIT 1
+2020-11-06 19:31:37 Debug: duration=0 rows=0 BEGIN
+2020-11-06 19:31:37 Debug: duration=2 rows=1 DELETE FROM kraj_regions WHERE id = 19
+2020-11-06 19:31:37 Debug: duration=0 rows=0 COMMIT
+2020-11-06 20:09:57 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-06 20:09:57 Debug: duration=2 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-06 20:09:57 Debug: duration=20 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-06 20:09:57 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-06 20:09:57 Debug: duration=0 rows=0 BEGIN
+2020-11-06 20:09:57 Debug: duration=3 rows=1 INSERT INTO kraj_regions (kod, nazev) VALUES ('CA000', 'Lavalsky Kraj')
+2020-11-06 20:09:57 Debug: duration=0 rows=0 COMMIT
+2020-11-06 20:09:57 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-06 20:11:44 Debug: duration=1 rows=1 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 20 LIMIT 1
+2020-11-06 20:11:44 Debug: duration=0 rows=0 BEGIN
+2020-11-06 20:11:44 Debug: duration=1 rows=1 DELETE FROM kraj_regions WHERE id = 20
+2020-11-06 20:11:44 Debug: duration=0 rows=0 COMMIT
+2020-11-06 20:11:45 Debug: duration=1 rows=14 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
